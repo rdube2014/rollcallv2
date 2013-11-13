@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h1>Course #<%= @course.id %></h1>
+  <h1>Course <%= @course.department %> <%= @course.number %></h1>
 </div>
 
 <dl class="dl-horizontal">
@@ -13,3 +13,18 @@
   <dd><%= @course.title %></dd>
 
 </dl>
+
+<p><strong>List of meetings for course <%= @course.department %> <%= @course.number %>:</strong></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Held on</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+       
+  
