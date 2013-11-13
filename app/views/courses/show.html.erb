@@ -28,3 +28,10 @@
 
        
   
+<td><% @meeting.each do |meeting| %> </td> 
+<tr>
+        <td><%= meeting.held_on %></td>
+    </tr>
+    <% end %>
+
+</table>
