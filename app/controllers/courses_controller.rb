@@ -7,7 +7,7 @@ class CoursesController < ApplicationController
   def show
     @course = Course.find_by(id: params[:id])
 
-    @meeting = Meeting.where(:course_id => "925")
+    @meeting = Meeting.where(:course_id => @course.number)
   end
 
   def new
