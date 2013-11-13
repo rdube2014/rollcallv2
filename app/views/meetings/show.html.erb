@@ -23,3 +23,12 @@
       <th></th>
     </tr>
   </thead>
+
+  <td><% @student.each do |student| %> </td> 
+<tr>
+        <td><%= student.first_name %></td>
+         <td><%= student.last_name %></td>
+        </tr>
+    <% end %>
+
+</table>
